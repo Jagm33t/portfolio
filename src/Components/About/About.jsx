@@ -27,9 +27,9 @@ function About() {
              <p className="about-knowme__txt">
               A passionate <span className="bold">Full-stack Web Developer</span> with a focus on innovative applications. Check out some of my work in the <span className="bold">Projects</span> section.<br/><br/>
                My love for coding and exploration of new technologies drives me forward. With strong skills in both <span className="bold">front-end</span> and <span className="bold">back-end</span> development, I create responsive, user-friendly websites.<br/><br/>
-               Keeping up with the latest industry trends, I believe in utilizing technology to make a positive impact. Continuous learning plays a crucial role in my journey, enabling me to stay ahead and deliver effective solutions.<br/><br/>
+               I believe in using technology to make a positive difference in the industry, and I stay updated with the latest trends. Continuous learning is vital for me to stay ahead and provide effective solutions.<br/><br/>
               Collaboration and contributing to industry professionals are my goals, as I am open to job opportunities for growth.<br/><br/>
-              <span className="bold-shine">Let's build the future together!</span>
+
                 </p>
 
              <button className="about-contactbtn" onClick={() => scrollToSection('Contact')}>CONTACT</button>

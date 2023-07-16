@@ -85,7 +85,7 @@ function NavHead() {
               <li onClick={() => scrollToSection('project')}>
                 <span>PROJECT</span>
               </li>
-              <li onClick={() => scrollToSection('contact')}>
+              <li onClick={() => scrollToSection('Contact')}>
                 <span>CONTACT</span>
               </li>
             </ul>

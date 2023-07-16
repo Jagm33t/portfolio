@@ -33,21 +33,6 @@ function Projects (){
 
         </div>
         </div>
-        {/* <div className="projects-cardsection">
-        <div className="projects-cards">
-          <div className="projects-book">
-            <p>Hello</p>
-          <div className="projects-cover">
-          <img src="" alt="" />
-          </div>
-         </div>
-         <div className="card-details">
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur nobis eveniet quibusdam corrupti quo recusandae ratione ipsum deleniti, animi minus nemo saepe temporibus illo reiciendis sapiente pariatur beatae. Rem.</p>
-         <button className="projects-viewbtn">View</button>
-        </div>
-        </div>
-
-        </div> */}
         <div className="projects-cardsection">
         <div className="projects-cards">
           <div className="projects-book">
