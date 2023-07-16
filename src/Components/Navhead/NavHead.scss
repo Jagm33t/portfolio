@@ -1,0 +1,162 @@
+@import "../../styles/Variable.scss";
+@import "../../styles/mixin.scss";
+
+.navbar-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  animation: nav-load 900ms ease-in ;
+}
+
+.navbar-container {
+  max-width: 100%;
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: black;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-iconport {
+  width: 3rem;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+
+.nav-logoname {
+  font-weight: 700;
+  color: $Card-Black;
+  font-size: 0.5rem;
+  padding-top: 20%;
+}
+
+.menu-icon {
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.nav-elements {
+  background-color: white;
+  box-shadow: 0 0 5px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+      cursor: pointer;
+      
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.exit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.nav-desktop{
+  display: none;
+
+  @include tablet {
+   display: flex;
+   width: 60%;
+   padding-right: 1.5rem;
+   font-size: 1rem;
+  cursor: pointer;
+  color: #583a64;
+  }
+  @include desktop {
+    display: flex;
+    width: 60%;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #583a64;
+   }
+}
+.nav-desktopul{
+  list-style-type: none;
+  font-weight: 700;
+  @include tablet{
+    display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+    width: 100%;
+    
+  }
+  @include desktop{
+    display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+    width: 100%;
+    
+  }
+  
+  
+  
+}
+.nav-desktopul li.active span {
+  text-decoration: underline;
+  animation-name: menuAnimation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes menuAnimation {
+  0% {
+    font-size: 1em;
+    color: black;
+  }
+  50% {
+    font-size: 1.2em;
+    color: rgba(0, 157, 255, 0.583);
+  }
+  100% {
+    font-size: 1em;
+    color: black;
+  }
+}
+@keyframes nav-load {
+  0%{
+    transform:translateY(-100%);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}

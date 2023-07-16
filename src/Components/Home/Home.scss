@@ -1,0 +1,158 @@
+@import "../../styles/mixin.scss";
+
+.home{
+
+&-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+   flex-direction: row;
+  }
+  @include desktop {
+    flex-direction: row;
+   }
+
+}
+&-social{
+  height: 10rem;
+  margin-top: 20%;
+  background-color:#fafafa ;
+  padding-left: 0.1rem;
+  display: none;
+  animation: nav-load 900ms ease-in ;
+  @include tablet {
+    display: block;
+   }
+   @include desktop {
+    display: block;
+   }
+
+}
+&-socialimage {
+  width: 2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+&-socialimage:hover {
+  transform: scale(1.2);
+}
+&-box1{
+  width: 100%;
+  padding-top: 20%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+   animation: box-load 900ms ease-in;
+}
+@keyframes box-load {
+  0%{
+    transform:translateX(-100%);
+  }
+  100%{
+    transform:translateX(0);
+  }
+}
+&-header{
+  font-size: 1rem;
+  color:#583a64;
+
+
+  @include tablet {
+   font-size: 1.5rem;
+   }
+   @include desktop {
+    font-size: 2.0rem;
+    }
+
+}
+&-details{
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-decoration:double;
+  color: #3c4043;
+  width: 80%;
+ 
+
+  @include tablet {
+    font-size: 0.7rem;
+    width: 80%;
+   }
+
+  @include desktop {
+    font-size: 1.5rem;
+    width: 80%;
+   }
+    
+}
+
+&-box2{
+  width: 100%;
+  padding-top: 10%;
+}
+&-portpic{
+  width: 100%;
+  animation: pic-load 900ms ease-in ;
+
+}
+@keyframes pic-load {
+  0%{
+    transform:translateX(100%);
+  }
+  100%{
+    transform:translateX(0);
+  }
+}
+&-projectbtn{
+  margin-top: 5%;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 0.31rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #583a64;
+  transition: all 1000ms;
+  font-size: 0.4rem;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #583a64;
+  width: 30%;
+  
+  @include tablet {
+    font-size: 0.8rem;
+    width: 38%;
+   }
+   @include desktop {
+    font-size: 0.8rem;
+    width: 38%;
+   }
+}
+&-projectbtn:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #583a64;
+  box-shadow: 0.25rem 0.31rem 1rem -0.25rem #583a64;
+}
+&-projectbtn::before {
+  content: "";
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #583a64;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+&-projectbtn:hover::before {
+  width: 250%;
+}
+
+}

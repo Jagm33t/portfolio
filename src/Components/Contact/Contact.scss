@@ -1,0 +1,64 @@
+@import "../../styles/mixin.scss";
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.contact-header{
+  animation: shine 2s ease-in-out infinite;
+  color:#583a64 ;
+  margin-bottom: 5rem;
+}
+.contact-form{
+  width: 80%;
+  padding-bottom: 4rem;
+
+@include tablet{
+  width: 60%;
+}
+@include desktop{
+  width: 50%;
+}
+}
+.form-container {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color:#f0f0f0;
+}
+
+.contact-submitbtn {
+  padding: 10px 20px;
+  background-color: #583a64;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-submitbtn:hover {
+  background-color: #0056b3;
+}
