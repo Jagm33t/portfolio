@@ -19,7 +19,7 @@ function Projects (){
         <div className="projects-cards">
           <div className="projects-book">
             <p className="projects-booktxt">This is a Full Stack Application built with HTML, SASS, React, Node, Express.js, MySql ,Axios, Web Api, Email.js and more..
-             Click on the Link here to view details <a href="https://github.com/Jagm33t/Capstone-client" target="_blank">Github</a>
+             Click on the Link here to view details <a href="https://github.com/Jagm33t/Capstone-client" target="_blank" rel="noopener noreferrer">Github</a>
              </p>
           <div className="projects-cover">
            <img className="card-image" src={capstone} alt="capstone" />
@@ -52,7 +52,7 @@ function Projects (){
         <div className="projects-cards">
           <div className="projects-book">
             <p className="projects-booktxt">The application is built using HTML and styled with CSS. It utilizes Axios calls to make requests to an external API, retrieves the data, and displays it to the user.
-            Click on the Link here to view details <a href="https://github.com/Jagm33t/Hackathon" target="_blank">Github</a>
+            Click on the Link here to view details <a href="https://github.com/Jagm33t/Hackathon" target="_blank" rel="noopener noreferrer">Github</a>
             </p>
           <div className="projects-cover">
           <img className="card-image" src={movies} alt="movies" />
@@ -69,7 +69,7 @@ function Projects (){
         <div className="projects-cards">
           <div className="projects-book">
             <p className="projects-booktxt">This is a Full Stack Application built with HTML, SASS, React, Node, Express.js, Axios..
-            Click on the Link here to view details <a href="https://github.com/Jagm33t/BrainFlix" target="_blank">Github</a>
+            Click on the Link here to view details <a href="https://github.com/Jagm33t/BrainFlix" target="_blank" rel="noopener noreferrer">Github</a>
             </p>
           <div className="projects-cover">
          <img className="card-image" src={brainflix} alt="brainflix" />
@@ -84,7 +84,7 @@ function Projects (){
         <div className="projects-cardsection">
         <div className="projects-cards">
           <div className="projects-book">
-            <p className="projects-booktxt">A Responsive application built using HTML, Sass, BEM and more.. Click on the Link here to view details <a href="https://github.com/Jagm33t/BandSite" target="_blank">Github</a></p>
+            <p className="projects-booktxt">A Responsive application built using HTML, Sass, BEM and more.. Click on the Link here to view details <a href="https://github.com/Jagm33t/BandSite" target="_blank" rel="noopener noreferrer">Github</a></p>
           <div className="projects-cover">
           <img className="card-image" src={bandsite} alt="bandsite" />
           </div>
@@ -98,7 +98,7 @@ function Projects (){
         <div className="projects-cardsection">
         <div className="projects-cards">
           <div className="projects-book">
-            <p className="projects-booktxt">A Front-end application is primarily focused on intricate and detailed styling with the help of Grid Positining in HTML and styled through Css.Click on the Link here to view details <a href="https://github.com/Jagm33t/Shopping-page" target="_blank">Github</a></p>
+            <p className="projects-booktxt">A Front-end application is primarily focused on intricate and detailed styling with the help of Grid Positining in HTML and styled through Css.Click on the Link here to view details <a href="https://github.com/Jagm33t/Shopping-page" target="_blank" rel="noopener noreferrer">Github</a></p>
           <div className="projects-cover">
           <img className="card-image" src={amazon} alt="amazon" />
           </div>

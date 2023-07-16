@@ -7,10 +7,12 @@ function About() {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
     setActive(sectionId);
+    console.log(active);
   };
   const [active, setActive]= useState ('');
   
 
+  
   return (
     <>
       <div className="about-container">
