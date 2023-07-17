@@ -36,6 +36,8 @@
   @include desktop {
     display: flex;
     flex-direction: row;
+    padding-left: 8%;
+    padding-right: 8% ;
   }
 }
 .about-knowme{
