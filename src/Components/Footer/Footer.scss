@@ -1,3 +1,6 @@
+@import "../../styles/mixin.scss";
+
+
 .rect-footer {
   display: flex;
   align-items: center;
@@ -22,7 +25,16 @@
 }
 .rect-footer-icons {
   display: flex;
+  flex-direction: column;
   gap: 10px;
+  width:40%;
+
+  @include tablet{
+   width: 22%;
+  }
+  @include desktop{
+    width: 18%;
+  }
 
   svg {
     width: 20px;
@@ -30,13 +42,33 @@
     color: #333;
   }
 }
+.email-address{
+  font-weight: 600;
+  font-size: 0.7rem;
 
+  @include tablet{
+    font-size: 1rem;
+  }
+  @include desktop{
+    font-size: 1rem;
+  }
+}
+.footer-social{
+  width: 100%;
+}
 .rect-footer-buttons {
   margin-left: 10px;
   
 }
-
-
+.footer-socialimage{
+  width: 2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding-right: 5%;
+}
+.footer-socialimage:hover {
+  transform: scale(1.2);
+}
 
 .rect-download {
   position: relative;

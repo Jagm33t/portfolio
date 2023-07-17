@@ -1,12 +1,22 @@
 import "./Footer.scss";
 import React from 'react';
+import { useState } from 'react';
+import gmail from '../../assets/icons/gmail.png'
 import linkedin from '../../assets/icons/linkedin.png';
 import github from '../../assets/icons/github.png';
 import resumePDF from '../../assets/resume/Jagmeet_Singh_resume.pdf';
 import diploma from "../../assets/resume/diploma.pdf";
 
 
-const Footer = () => {
+function Footer() {
+
+ const [showEmail, setShowEmail] = useState(false);
+
+ const handleImageClick = () =>{
+  setShowEmail(true);
+ }
+
+
   const openPDFInNewTab = () => {
     window.open(diploma, '_blank');
   };
@@ -49,15 +59,23 @@ const Footer = () => {
       </div>
      
       <div className="rect-footer-icons">
-       <h4><span>itsjag07@gmail.com</span></h4>
+      
        <div className="footer-social">
+       <img className="footer-socialimage" src={gmail} alt="gmail" onClick={handleImageClick}/>
           <a href="https://www.linkedin.com/in/jagmeet-singh7/" target="_blank" rel="noopener noreferrer">
-            <img className="home-socialimage" src={linkedin} alt="linkedin" />
+            <img className="footer-socialimage" src={linkedin} alt="linkedin" />
           </a>
           <a href="https://github.com/Jagm33t" target="_blank" rel="noopener noreferrer">
-            <img className="home-socialimage" src={github} alt="github" />
+            <img className="footer-socialimage" src={github} alt="github" />
           </a>
         </div>
+       <div className="footer-socialemail">
+       {showEmail && (
+        <div className="email-section">
+          <p className="email-address">itsjag07@gmail.com </p>
+        </div>
+      )}
+       </div>
       </div>
       
       </div>
