@@ -28,8 +28,7 @@ function Home() {
         </div>
         <div className="home-box1">
           <h1 className="home-header">JAGMEET SINGH</h1>
-          <p className="home-details">Full-Stack Developer based in Vancouver, Canada, dedicated to crafting innovative solutions and turning ideas into reality."</p>
-
+          <p className="home-details typing-demo">Full-Stack Developer based in Vancouver, Canada.</p>
           <button className="home-projectbtn" onClick={() => scrollToSection('project')}>PROJECTS</button>
         </div>
         <div className="home-box2">

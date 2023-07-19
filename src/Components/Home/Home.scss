@@ -21,7 +21,7 @@
   background-color:#fafafa ;
   padding-left: 0.1rem;
   display: none;
-  animation: nav-load 900ms ease-in ;
+  animation: nav-load 1400ms ease-in ;
   @include tablet {
     display: block;
    }
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
    align-items: center;
-   animation: box-load 900ms ease-in;
+   animation: box-load 1400ms ease-in;
 }
 @keyframes box-load {
   0%{
@@ -96,7 +96,7 @@
 }
 &-portpic{
   width: 100%;
-  animation: pic-load 900ms ease-in ;
+  animation: pic-load 1400ms ease-in ;
 
 }
 @keyframes pic-load {
@@ -155,4 +155,43 @@
   width: 250%;
 }
 
+}
+
+
+.typing-demo {
+  width: 75%;
+  animation: typing 4s steps(22), blink .6s steps(22) 3 ;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0px solid;
+  font-family: monospace;
+  font-size: 0.5rem;
+  padding-left: 8%;
+
+  
+
+  @include tablet{
+   font-size: 0.7rem;
+   width: 90%;
+   padding-left: 12%;
+   
+  }
+  @include desktop{
+    font-size: 0.9rem;
+    width: 68%;
+    padding-left: 12%;
+    
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
