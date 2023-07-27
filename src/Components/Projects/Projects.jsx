@@ -4,6 +4,7 @@ import brainflix from "../../assets/images/brainflixscreen.png";
 import bandsite from "../../assets/images/screenshotshows.png";
 import amazon from "../../assets/images/amazonpage.png";
 import movies from "../../assets/images/movieslover.png";
+import fastfingers from "../../assets/images/fastfinger.png";
 function Projects (){
 
 
@@ -97,6 +98,19 @@ function Projects (){
         </div>
 
 
+      </div>
+      <div className="projects-third">
+        <div className="project-third__header">
+        <h2 className="third-header">For Fun Projects</h2>
+        </div>
+        <div className="projects-fun">
+        <div className="typing-portfolio">
+        <a href="https://jagmeetsingh-fastfingers.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <img className="fastfingers" src={fastfingers} alt="fastfingers" /></a>
+        <p className="typing-para">Made with typescript</p>
+        </div>
+        </div>
+       
       </div>
     </div>
     </>

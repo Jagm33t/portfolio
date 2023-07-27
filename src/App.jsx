@@ -7,16 +7,16 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate the loading process for 3 seconds
+    
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
 
-    // Clear the timeout to avoid memory leaks
     return () => clearTimeout(loadingTimeout);
   }, []);
 
@@ -46,6 +46,7 @@ function App() {
           <Footer />
         </>
       )}
+     
     </div>
   );
 };
