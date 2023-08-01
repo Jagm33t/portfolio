@@ -4,6 +4,7 @@ import './Home.scss';
 import linkedin from '../../assets/icons/linkedin.png';
 import github from '../../assets/icons/github.png';
 import gmail from '../../assets/icons/gmail.png';
+import 'animate.css';
 
 function Home() {
   const scrollToSection = (sectionId) => {
@@ -27,8 +28,8 @@ function Home() {
           <img className="home-socialimage" src={gmail} alt="gmail" onClick={() => scrollToSection('Contact')} />
         </div>
         <div className="home-box1">
-          <h1 className="home-header">JAGMEET SINGH</h1>
-          <p className="home-details typing-demo">Full-Stack Web Developer based in Vancouver, Canada . `</p>
+          <h1 className="home-header animate__bounceInRight">JAGMEET SINGH</h1>
+          <p className="home-details typing-demo">Full-Stack Web Developer based in Vancouver, Canada.</p>
           <button className="home-projectbtn" onClick={() => scrollToSection('project')}>PROJECTS</button>
         </div>
         <div className="home-box2">
