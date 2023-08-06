@@ -10,7 +10,7 @@
   width: 100%;
   z-index: 100;
   background-color: white;
-  animation: nav-load 1600ms ease-in ;
+  animation: nav-load 2500ms ease-in ;
 }
 
 .navbar-container {
@@ -99,7 +99,7 @@
    padding-right: 1.5rem;
    font-size: 1rem;
   cursor: pointer;
-  color: #583a64;
+  color:#583a63 ;
   }
   @include desktop {
     display: flex;
@@ -107,7 +107,7 @@
     padding-right: 2rem;
     font-size: 1.2rem;
     cursor: pointer;
-    color: #583a64;
+    color: #583a63;
    }
 }
 .nav-desktopul{

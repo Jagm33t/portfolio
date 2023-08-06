@@ -19,7 +19,7 @@ function Projects (){
         <div className="projects-cardsection">
         <div className="projects-cards">
           <div className="projects-book">
-            <p className="projects-booktxt">This is a Full Stack Application built with HTML, SASS, React, Node, Express.js, MySql ,Axios, Web Api, Email.js and more..
+            <p className="projects-booktxt">This is a Full Stack Application built with HTML, SASS, React, Node, Express.js, MySql, JWT Token Authentication ,Axios, Web Api, Email.js and more..
              Click on the Link here to view details <a href="https://github.com/Jagm33t/Capstone-client" target="_blank" rel="noopener noreferrer">Github</a>
              </p>
           <div className="projects-cover">
@@ -109,6 +109,7 @@ function Projects (){
         <img className="fastfingers" src={fastfingers} alt="fastfingers" /></a>
         <p className="typing-para">Made with typescript</p>
         </div>
+        
         </div>
        
       </div>

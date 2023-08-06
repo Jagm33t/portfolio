@@ -6,7 +6,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .contact-header{
@@ -52,7 +52,7 @@ textarea {
 
 .contact-submitbtn {
   padding: 10px 20px;
-  background-color: #583a64;
+  background-color:  #583a63;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -60,5 +60,5 @@ textarea {
 }
 
 .contact-submitbtn:hover {
-  background-color: #0056b3;
+  background-color: #583a63;
 }

@@ -42,7 +42,7 @@ function About() {
             <div className="about-skillscard">
               <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Sass</span>
               <span>Node</span><span>MySql</span><span>Express.js</span>
-              <span>Git</span><span>GitHub</span><span>Jira</span><span>Figma</span><span>Json</span><span>Web Api's</span><span>Agile Development</span><span>Visual Studio Code</span>
+              <span>Git</span><span>GitHub</span><span>Jira</span><span>Figma</span><span>Json</span><span>Web Api's</span><span>Agile Development</span><span>Visual Studio Code</span><span>User Authentication</span>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #bdbad3;
+  background-color: #fafafa;
   padding: 10px;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -77,9 +77,9 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  border: 1px solid #583a64;
+  border: 1px solid  #583a63;
   border-radius: 1rem;
-  background-color: #583a64;
+  background-color: #583a63;
   overflow: hidden;
 }
 
@@ -98,7 +98,7 @@
   transform: translateX(109px);
   height: 100%;
   width: 39px;
-  background-color: #583a64;
+  background-color: #583a63;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@
 }
 
 .rect-download:hover {
-  background: #583a64;
+  background: #583a63;
 }
 
 .rect-download:hover .button__text {
@@ -123,11 +123,11 @@
 }
 
 .rect-download:active .button__icon {
-  background-color: #583a64;
+  background-color: #583a63;
 }
 
 .rect-download:active {
-  border: 1px solid #583a64;
+  border: 1px solid #583a63;
 }
 
 .rect-footer-bottom {
@@ -147,7 +147,7 @@
   height: 2.5rem;
   border-radius: 1rem;
   cursor: pointer;
-  background-color: #583a64;
+  background-color: #583a63;
   color: white;
   border: none;
   margin-top: 0.5rem;

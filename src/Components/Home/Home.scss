@@ -27,7 +27,7 @@
 &-social{
   height: 10rem;
   margin-top: 20%;
-  background-color:#fafafa ;
+  background-color:white;
   padding-left: 0.1rem;
   display: none;
   animation: nav-load 1400ms ease-in ;
@@ -44,6 +44,7 @@
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
   cursor: pointer;
+  
 }
 
 &-socialimage:hover {
@@ -68,7 +69,7 @@
 }
 &-header{
   font-size: 1rem;
-  color:#583a64;
+  color:#583a63;
 
 
   @include tablet {
@@ -130,12 +131,12 @@
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #583a64;
+  color: #583a63;
   transition: all 1000ms;
   font-size: 0.4rem;
   position: relative;
   overflow: hidden;
-  outline: 2px solid #583a64;
+  outline: 2px solid #583a63;
   width: 30%;
   
   @include tablet {
@@ -150,8 +151,8 @@
 &-projectbtn:hover {
   color: #ffffff;
   transform: scale(1.1);
-  outline: 2px solid #583a64;
-  box-shadow: 0.25rem 0.31rem 1rem -0.25rem #583a64;
+  outline: 2px solid #583a63;
+  box-shadow: 0.25rem 0.31rem 1rem -0.25rem #583a63;
 }
 &-projectbtn::before {
   content: "";
@@ -160,7 +161,7 @@
   top: 0;
   width: 0;
   height: 100%;
-  background-color: #583a64;
+  background-color: #583a63;
   transform: skewX(45deg);
   z-index: -1;
   transition: width 1000ms;
