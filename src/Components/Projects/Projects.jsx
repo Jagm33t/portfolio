@@ -5,6 +5,7 @@ import bandsite from "../../assets/images/screenshotshows.png";
 import amazon from "../../assets/images/amazonpage.png";
 import movies from "../../assets/images/movieslover.png";
 import fastfingers from "../../assets/images/fastfinger.png";
+import tic from "../../assets/images/tic.png";
 function Projects (){
 
 
@@ -108,6 +109,12 @@ function Projects (){
         <a href="https://jagmeetsingh-fastfingers.netlify.app/" target="_blank" rel="noopener noreferrer">
         <img className="fastfingers" src={fastfingers} alt="fastfingers" /></a>
         <p className="typing-para">Made with typescript</p>
+        </div>
+
+        <div className="tic-tac-toe">
+        <a href="https://jagmeetsingh-tic-tac-toe.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <img className="tic" src={tic} alt="tic-tac-toe" /></a>
+        <p className="typing-para">Made with Javascript</p>
         </div>
         
         </div>

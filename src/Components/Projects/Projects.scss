@@ -197,11 +197,15 @@ a{
   animation: shine 2s ease-in-out infinite;
   color:#583a64 ;
 }
+.typing-portfolio{
+  width: 30%;
+}
 .fastfingers {
   border-radius: 10%;
-  width: 30%;
+  width: 80%;
   cursor: pointer;
   transition: all 0.3s ease; 
+  margin-top: 5%;
 }
 
 .fastfingers:hover {
@@ -210,9 +214,29 @@ a{
 }
 
  .projects-fun{
-   padding: 2rem;
+   padding: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
   
  }
  .typing-para{
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
  }
+ .tic-tac-toe{
+   width: 40%;
+  
+   
+ }
+ .tic{
+  border-radius: 10%;
+  width: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  
+ }
+ .tic:hover {
+  transform: scale(1.05); 
+  opacity: 0.9; 
+}
