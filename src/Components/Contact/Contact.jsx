@@ -2,12 +2,15 @@ import React, { useState ,useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.scss"
 
+
 function Contact() {
 
   const form = useRef()
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
 
  
     const sendEmail = (e) => {
@@ -16,7 +19,13 @@ function Contact() {
       emailjs.sendForm('service_ajwuvdn', 'template_i1j0rtt', form.current, 'NafCX7UaARHnuk0PJ')
         .then((result) => {
             console.log(result.text);
+            setIsSubmitted(true);
             form.current.reset();
+             setName(''); 
+      setEmail(''); 
+      setMessage('');
+        
+
         }, (error) => {
             console.log(error.text);
         });
@@ -43,6 +52,7 @@ function Contact() {
                 name='user_name'
                 onChange={(e) => setName(e.target.value)}
                 required
+                disabled={isSubmitted} 
               />
             </div>
             <div className="form-group">
@@ -54,6 +64,7 @@ function Contact() {
                 name='user_email'
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                disabled={isSubmitted} 
               />
             </div>
             <div className="form-group">
@@ -64,10 +75,17 @@ function Contact() {
                 name='user_message'
                 onChange={(e) => setMessage(e.target.value)}
                 required
+                disabled={isSubmitted} 
               />
             </div>
             <button className='contact-submitbtn' type="submit">Submit</button>
           </form>
+          {isSubmitted && (
+             <div className="alert alert-success">
+                   Your message has been submitted successfully!
+                        </div>
+                    )}
+
         </div>
       </div>
     </>
