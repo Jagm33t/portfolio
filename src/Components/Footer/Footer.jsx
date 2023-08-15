@@ -4,7 +4,7 @@ import { useState } from 'react';
 import gmail from '../../assets/icons/gmail.png'
 import linkedin from '../../assets/icons/linkedin.png';
 import github from '../../assets/icons/github.png';
-import resumePDF from '../../assets/resume/Jagmeet_Singh_resume.pdf';
+import resumePDF from '../../assets/resume/jagmeet_singh_resume.pdf';
 import diploma from "../../assets/resume/diploma.pdf";
 
 
@@ -25,10 +25,12 @@ function Footer() {
       <div className="rect-first">
       <div className="rect-footer-buttons">
       <button className="rect-download" type="button">
-  <span className="button__text">
+      <span className="button__text">
     <a
       className="rect-footer-download"
       href={resumePDF}
+      target="_blank" 
+      rel="noopener noreferrer" 
       download="resume.pdf"
     >
       Resume
